@@ -1,0 +1,288 @@
+html * {
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box;
+}
+
+body{
+    background-color: #1C1919;
+}
+
+/* SECTION NAV */
+
+div.boxIcon {
+    height: 25vh;
+    width: 9rem;
+    background-color: #000000;
+    padding: 30px 0px;
+    position: absolute;
+}
+
+div.boxIcon a {
+    text-decoration: none;
+}
+
+span.icon {
+    color: #f82756;
+    text-shadow: 5px 3px #08f8d9;
+    font-size: 4rem;
+    font-weight:900;
+}
+
+div.boxIcon p {
+    color:#f3f3f3;
+    margin-top: 10px;
+    text-align: center;
+}
+
+div.boxNav nav{
+    display: flex;
+    flex-direction:column;
+    width: 10rem;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+div.boxNav a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 1.2em;
+}
+
+.boxNav a:hover {
+    background-color: #08f8d9;
+    transform: scale(1.2);
+    transition: 2s linear;
+}
+
+.iconos {
+    text-align: center;
+    margin-right: 20px;
+}
+
+/* SECTION HOME */
+.boxCenter {
+display: flex;
+flex-direction: column;
+margin: 0 12rem;
+color: #f3f3f3;
+position: absolute;
+top: 4rem;
+}
+
+.boxCenter:hover {
+transform: scaley(1.1);
+transition: 1s ease-in-out;
+}
+
+.boxText > h2 {
+    font-size: 5rem;
+    font-weight: 700;
+    font-family: 'Anton', sans-serif;
+}
+
+.boxText p {
+    font-size: 1rem;
+    font-family: 'Splash', cursive;
+}
+
+p.stack{
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 2rem;
+}
+
+.boxBottom button {
+    text-align: center;
+    cursor:pointer;
+    width: 40%;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #1C1919;
+    border: 1px solid #08f8d9;
+    color: #08f8d9;
+}
+
+button.btn {
+    font-size: 1.3rem;
+}
+
+button.btn:hover {
+    background-color: #08f8d9;
+    color: #f3f3f3;
+    transition: 1s ease-in-out;
+}
+
+/* SECTION ABOUT ME */
+
+.boxAbout {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        margin: 5rem 10rem;
+        color: #f3f3f3;
+        width: 70%;
+        }
+
+.boxText  h3 {
+    font-size: 5rem;
+    font-weight: 600;
+    font-family: 'Anton', sans-serif;
+    color: #08f8d9;
+    padding: .2em;
+}
+
+p.about {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    width: 60%;
+}
+
+p.create {
+    color: #08f8d9;
+}
+
+.boxAnimation {
+margin: auto;
+width: 40%;
+height: 100vh;
+}
+
+.mainAnimation{
+    width: 80%;
+    height: 50%;
+    border-radius: 100%;
+    color: #f3f3f3;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite
+}
+
+@keyframes example {
+    0%   {
+        background-image: url(./recursos/descarga.png);
+        transform:rotateZ(360deg);
+        transition: 1s linear;
+    }
+    5%  {
+        background-image: url(./recursos/descarga.png);
+        transform:rotateZ(180deg);
+        transition: 2s ease;
+    }
+    15%  {
+        background-image: url(./recursos/descarga.png);
+        transform:rotateZ(360deg);
+        transition: 3s ease-in-out;
+    }
+    25%  {
+        background-image: url(./recursos/descarga.png);
+        transform:rotateZ(180deg);
+        transition: 4s ease-in;
+    }
+    50%  {
+        background-image: url(./recursos/descarga.png);
+        transform:rotatey(360deg);
+        transition: 3s linear;
+    }
+    75%  {
+        background-image: url(./recursos/descarga.png);
+        transform:rotateY(180deg);
+        transition: 2s ease;
+    }
+    85%  {
+        background-image: url(./recursos/descarga.png);
+        transform:rotateY(360deg);
+        transition: 1s ease-in-out;
+    }
+    100% {
+        background-image: url(./recursos/descarga.png);
+        transform:rotateY(180deg);
+        transition: 2s ease-in;
+    }
+}
+
+a.back {
+text-decoration: none;
+color: #08f8d9;
+}
+
+/* SECTION MY SKILL */
+#box-main{
+    display: flex;
+}
+
+.boxSkill{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 10rem;
+    color: #f3f3f3;
+    width: 70%;
+    }
+
+    .skill{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        width: 20%;
+        color: #f3f3f3;
+        height: 40vh;
+        transform: scale(1.3);
+        margin-top: 3rem;
+    }
+
+    .skill1, .skill2, .skill3, .skill4,
+    .skill5 {
+        margin: 10px;
+        color: #08f8d9;
+        transition: all 4s ease-in;
+        transform: translatey(100%);
+    }
+
+    p.about a {
+        text-decoration: none;
+        color: #08f8d9;
+    }
+
+/* SECTION  CONTACT */
+
+.boxContact{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        margin: 1.5rem 10rem;
+        color: #f3f3f3;
+        width: 70%;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+.contact{
+    background-color: rgb(75, 65, 65);
+    margin: .5rem;
+    padding: 0.5em;
+    width: 20%;
+    margin: auto;
+}
+
+.textarea{
+    background-color: rgb(75, 65, 65);
+    margin: .5rem;
+    padding: 0.5em;
+    width: 100%;
+}
+
+.textarea2{
+    background-color: rgb(75, 65, 65);
+    height: 100px;
+    width: 100%;
+}
+
+
+
+
