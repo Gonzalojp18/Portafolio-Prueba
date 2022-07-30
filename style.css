@@ -16,9 +16,9 @@ body{
 
 .iconos {
     width: 10%;
-    position: fixed;
-    right: .5em;
-    top: 5rem;
+    position:fixed;
+    right: .1em;
+    top: 1rem;
 }
 
 /* SECTION HOME */
@@ -54,11 +54,10 @@ min-height: 100vh;
 }
 
 .title-main span { 
-
-        color: #f82756;
-        text-shadow: 5px 3px #08f8d9;
-        font-size: 4.5rem;
-        font-weight:900;
+    color: #f82756;
+    text-shadow: 5px 3px #08f8d9;
+    font-size: 4.5rem;
+    font-weight:900;
     }
 
 .boxEndTag {
@@ -98,7 +97,7 @@ button.btn:hover {
 
 @media (min-width: 320px) and (max-width: 768px) {
     .boxCenter {
-        width: 100%;
+        min-width: 100vw;
         }
 
     .boxTag{
@@ -107,21 +106,20 @@ button.btn:hover {
     }
 
     .title-main {
-    width: 60%;
+        min-width: 60%;
     }
 
-    .title-main h2 { 
-        font-size: 2rem;
+    .title-main h2 {
+        font-size: 2.5rem;
     }
 
     .boxEndTag {
         width: 30%;
-        color: #f3f3f3;
     }
 
     p.stack{
         font-family: 'Darker Grotesque', sans-serif;
-        font-size: 1rem;
+        font-size: .8rem;
     }
 
 
@@ -130,43 +128,24 @@ button.btn:hover {
 /* SECTION ABOUT ME */
 
 .boxAbout {
-        display: flex;
-        flex-direction: column;
-        align-items:center;
-        color: #f3f3f3;
-        min-width: 100%;
-        }
-
-
-.boxTag h3  {
-    font-size: 5rem;
-    font-weight: 600;
-    font-family: 'Anton', sans-serif;
-    color: #08f8d9;
-    padding: .2em;
-}
-
-p.about {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.1rem;
-    width: 60%;
-}
-
-p.create {
-    color: #08f8d9;
+    display: flex;
+    color: #f3f3f3;
+    justify-content: flex-end;
+    max-width: 80%;
+    min-height: 80vh;
+    margin: auto;
 }
 
 .boxAnimation {
-margin: auto;
-width: 40%;
-height: 100vh;
+    margin: auto;
+    width: 50%;
+    height: 100vh;
 }
 
 .mainAnimation{
-    width: 80%;
+    min-width: 100%;
     height: 50%;
     border-radius: 100%;
-    color: #f3f3f3;
     animation-name: example;
     animation-duration: 4s;
     animation-iteration-count: infinite
@@ -215,48 +194,200 @@ height: 100vh;
     }
 }
 
+.mainAbout {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: 'Roboto', sans-serif;
+    font-size: .8rem;
+    width: 50%;
+    padding: 2rem;
+}
+
+.boxTagAbout{
+    width: 100%;
+    transform: translatey(-10%);
+    transition: 4s ease-out;
+    font-family: 'Splash', cursive;
+    font-size: 1rem;
+    color: #f3f3f3;
+}
+
+.aboutMe {
+    width: 100%;
+    transform: translatey(-10%);
+    transition: 4s ease-out;
+    margin: 2.5rem 0 0rem 0;
+}
+
+.boxEndTagAbout{
+    width: 100%;
+    transform: translatey(-10%);
+    transition: 4s ease-out;
+    font-family: 'Splash', cursive;
+    font-size: 1rem;
+    color: #f3f3f3;
+}
+
+.intro{
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: 'Anton', sans-serif;
+    color: #08f8d9;
+    padding: .2em;
+}
+
 a.back {
 text-decoration: none;
 color: #08f8d9;
 }
 
-/* SECTION MY SKILL */
-#box-main{
-    display: flex;
-}
+@media (min-width: 320px) and (max-width: 768px) {
 
-.boxSkill{
-    display: flex;
-    flex-direction: column;
-    margin: 2rem 10rem;
-    color: #f3f3f3;
-    width: 70%;
+    .boxAbout {
+        flex-direction: column-reverse;
+        width: 100vw;
+        min-height: 80vh;
     }
 
-    .skill{
+    .mainAbout {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        justify-content: space-evenly;
-        width: 20%;
+        font-family: 'Roboto', sans-serif;
+        width: 100%;
+        padding: .5rem;
+    }
+
+    .boxTagAbout{
+        font-size: .8rem;
+    }
+
+    .aboutMe {
+        margin: 2rem 0 0rem 0;
+        font-size: .6rem;
+    }
+
+    .intro{
+        font-size: 2rem;
+    }
+
+
+}
+
+/* SECTION MY SKILL */
+
+.boxSkill{
+    display: flex;
+    color: #f3f3f3;
+    justify-content: flex-end;
+    max-width: 80%;
+    min-height: 100vh;
+    margin: auto;
+    padding: 2rem;
+    }
+
+.mainSkill {
+        width: 50%;
+}
+
+.boxTagSkill{
+        width: 100%;
+        transform: translatex(10%);
+        transition: 4s ease-out;
+        font-family: 'Splash', cursive;
+        font-size: 1rem;
         color: #f3f3f3;
-        height: 40vh;
-        transform: scale(1.3);
-        margin-top: 3rem;
+}
+
+.aboutMySkill {
+    width: 80%;
+    transform: translatey(-10%);
+    transition: 4s ease-out;
+    margin: 1rem 0 0rem 0;
+    padding: 1rem;
+    font-size: .8rem;
+}
+
+.aboutMySkill h3 {
+    margin: 2rem 0 1rem 0;
+}
+
+.boxEndTagSkill {
+    width: 100%;
+    transform: translatey(-10%);
+    transition: 4s ease-out;
+    font-family: 'Splash', cursive;
+    font-size: 1rem;
+    color: #f3f3f3;
+}
+
+.boxEndTagSkill a.create{
+    color: #08f8d9;
+}
+
+.boxEndTagSkill p.intoSkill{
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: .8rem;
+}
+
+.skill{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    width: 50%;
+    color: #f3f3f3;
+    min-height: 100%;
+    margin-top: 1rem;
     }
 
-    .skill1, .skill2, .skill3, .skill4,
-    .skill5 {
-        margin: 10px;
-        color: #08f8d9;
-        transition: all 4s ease-in;
-        transform: translatey(100%);
+.skill1, .skill2, .skill3, .skill4,
+.skill5 {
+    margin: 10px;
+    color: #08f8d9;
+    transition: all 4s ease-in;
+    transform: translatey(100%);
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+    .boxSkill {
+        flex-direction: column;
+        width: 100vw;
+        min-height: 80vh;
     }
 
-    p.about a {
-        text-decoration: none;
-        color: #08f8d9;
+    .mainSkill {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-family: 'Roboto', sans-serif;
+        width: 100%;
+        padding: .5rem;
     }
+
+    .boxTagSkill{
+        font-size: .8rem;
+    }
+
+    .aboutMySkill {
+        margin: 1rem 0 0rem 0;
+        font-size: .6rem;
+        width: 100%;
+    }
+
+    .intro{
+        font-size: 2rem;
+    }
+
+    .boxEndTagSkill p.intoSkill{
+        font-size: .6rem;
+    }
+
+}
+
+
 
 /* SECTION  CONTACT */
 
