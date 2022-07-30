@@ -8,84 +8,67 @@ body{
     background-color: #1C1919;
 }
 
+
 /* SECTION NAV */
-
-div.boxIcon {
-    height: 25vh;
-    width: 9rem;
-    background-color: #000000;
-    padding: 30px 0px;
-    position: absolute;
-}
-
-div.boxIcon a {
-    text-decoration: none;
-}
-
-span.icon {
-    color: #f82756;
-    text-shadow: 5px 3px #08f8d9;
-    font-size: 4rem;
-    font-weight:900;
-}
-
-div.boxIcon p {
-    color:#f3f3f3;
-    margin-top: 10px;
-    text-align: center;
-}
-
-div.boxNav nav{
-    display: flex;
-    flex-direction:column;
-    width: 10rem;
-    padding: 10px 0;
-    margin: 10px 0;
-}
-
-div.boxNav a {
-    color: white;
-    text-decoration: none;
-    margin: 20px;
-    font-size: 1.2em;
-}
-
-.boxNav a:hover {
-    background-color: #08f8d9;
-    transform: scale(1.2);
-    transition: 2s linear;
+.boxNavBar {
+        min-width: 100%;
 }
 
 .iconos {
-    text-align: center;
-    margin-right: 20px;
+    width: 10%;
+    position: fixed;
+    right: .5em;
+    top: 5rem;
 }
 
 /* SECTION HOME */
 .boxCenter {
 display: flex;
 flex-direction: column;
-margin: 0 12rem;
-color: #f3f3f3;
-position: absolute;
-top: 4rem;
+justify-content: center;
+max-width: 100%;
+min-height: 100vh;
 }
 
-.boxCenter:hover {
-transform: scaley(1.1);
-transition: 1s ease-in-out;
-}
-
-.boxText > h2 {
-    font-size: 5rem;
-    font-weight: 700;
-    font-family: 'Anton', sans-serif;
-}
-
-.boxText p {
-    font-size: 1rem;
+.boxTag{
+    width: 40%;
+    transform: translateX(60%);
+    transition: 2s ease-out;
     font-family: 'Splash', cursive;
+    font-size: 1.5rem;
+    color: #f3f3f3;
 }
+
+.title-main {
+    width: 50%;
+    transform: translateX(60%);
+    transition: 4s ease-out;
+    color: #f3f3f3;
+    font-size: 5rem;
+    min-height: 20vh;
+    margin: .5rem 0 .5rem 0;
+}
+
+.title-main h2 { 
+    font-size: 4rem;
+}
+
+.title-main span { 
+
+        color: #f82756;
+        text-shadow: 5px 3px #08f8d9;
+        font-size: 4.5rem;
+        font-weight:900;
+    }
+
+.boxEndTag {
+    width: 40%;
+    transform: translateX(60%);
+    transition: 2s ease-out;
+    font-family: 'Splash', cursive;
+    color: #f3f3f3;
+}
+
 
 p.stack{
     font-family: 'Darker Grotesque', sans-serif;
@@ -95,9 +78,9 @@ p.stack{
 .boxBottom button {
     text-align: center;
     cursor:pointer;
-    width: 40%;
-    margin: 20px 0;
-    padding: 10px;
+    width: 20%;
+    margin: 20px 0 0 20rem;
+    padding: 5px;
     background-color: #1C1919;
     border: 1px solid #08f8d9;
     color: #08f8d9;
@@ -110,7 +93,38 @@ button.btn {
 button.btn:hover {
     background-color: #08f8d9;
     color: #f3f3f3;
-    transition: 1s ease-in-out;
+    transition: 2s ease-in-out;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .boxCenter {
+        width: 100%;
+        }
+
+    .boxTag{
+        width: 30%;
+        font-size: .8rem;
+    }
+
+    .title-main {
+    width: 60%;
+    }
+
+    .title-main h2 { 
+        font-size: 2rem;
+    }
+
+    .boxEndTag {
+        width: 30%;
+        color: #f3f3f3;
+    }
+
+    p.stack{
+        font-family: 'Darker Grotesque', sans-serif;
+        font-size: 1rem;
+    }
+
+
 }
 
 /* SECTION ABOUT ME */
@@ -119,12 +133,12 @@ button.btn:hover {
         display: flex;
         flex-direction: column;
         align-items:center;
-        margin: 5rem 10rem;
         color: #f3f3f3;
-        width: 70%;
+        min-width: 100%;
         }
 
-.boxText  h3 {
+
+.boxTag h3  {
     font-size: 5rem;
     font-weight: 600;
     font-family: 'Anton', sans-serif;
