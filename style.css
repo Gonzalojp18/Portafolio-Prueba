@@ -25,9 +25,9 @@ body{
 .boxCenter {
 display: flex;
 flex-direction: column;
-justify-content: center;
 max-width: 100%;
 min-height: 100vh;
+padding: 1rem;
 }
 
 .boxTag{
@@ -101,12 +101,13 @@ button.btn:hover {
         }
 
     .boxTag{
-        width: 30%;
+        width: 20%;
         font-size: .8rem;
+        transform: translateX(10%);
     }
 
     .title-main {
-        min-width: 60%;
+        min-width: 50%;
     }
 
     .title-main h2 {
@@ -114,12 +115,28 @@ button.btn:hover {
     }
 
     .boxEndTag {
-        width: 30%;
+        width: 20%;
+        transform: translateX(10%);
     }
 
     p.stack{
         font-family: 'Darker Grotesque', sans-serif;
-        font-size: .8rem;
+        font-size: 1.5rem;
+    }
+
+    .boxBottom button {
+        width: 50%;
+        margin: 1rem 0 0 1rem;
+        padding: .1rem;
+    }
+
+    .iconos {
+        display: flex;
+        flex-direction: column;
+        width: 10%;
+        position:fixed;
+        right: .5em;
+        top: 5rem;
     }
 
 
@@ -144,7 +161,7 @@ button.btn:hover {
 
 .mainAnimation{
     min-width: 100%;
-    height: 50%;
+    height: 40%;
     border-radius: 100%;
     animation-name: example;
     animation-duration: 4s;
@@ -256,7 +273,7 @@ color: #08f8d9;
         align-items: flex-start;
         font-family: 'Roboto', sans-serif;
         width: 100%;
-        padding: .5rem;
+        padding: .2rem;
     }
 
     .boxTagAbout{
@@ -265,13 +282,12 @@ color: #08f8d9;
 
     .aboutMe {
         margin: 2rem 0 0rem 0;
-        font-size: .6rem;
+        font-size: .8rem;
     }
 
     .intro{
         font-size: 2rem;
     }
-
 
 }
 
@@ -281,10 +297,9 @@ color: #08f8d9;
     display: flex;
     color: #f3f3f3;
     justify-content: flex-end;
-    max-width: 80%;
+    max-width: 100%;
     min-height: 100vh;
-    margin: auto;
-    padding: 2rem;
+    padding: .5rem;
     }
 
 .mainSkill {
@@ -292,7 +307,7 @@ color: #08f8d9;
 }
 
 .boxTagSkill{
-        width: 100%;
+        width: 60%;
         transform: translatex(10%);
         transition: 4s ease-out;
         font-family: 'Splash', cursive;
@@ -305,12 +320,12 @@ color: #08f8d9;
     transform: translatey(-10%);
     transition: 4s ease-out;
     margin: 1rem 0 0rem 0;
-    padding: 1rem;
-    font-size: .8rem;
+    padding: .5rem 0 0 0;
+    font-size: 1rem;
 }
 
 .aboutMySkill h3 {
-    margin: 2rem 0 1rem 0;
+    margin: 1.5rem 0 .5rem 0;
 }
 
 .boxEndTagSkill {
@@ -335,16 +350,14 @@ color: #08f8d9;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: space-evenly;
     width: 50%;
     color: #f3f3f3;
     min-height: 100%;
-    margin-top: 1rem;
     }
 
 .skill1, .skill2, .skill3, .skill4,
 .skill5 {
-    margin: 10px;
+    margin-top: 2rem;
     color: #08f8d9;
     transition: all 4s ease-in;
     transform: translatey(100%);
@@ -354,7 +367,7 @@ color: #08f8d9;
 
     .boxSkill {
         flex-direction: column;
-        width: 100vw;
+        min-width: 80%;
         min-height: 80vh;
     }
 
@@ -364,16 +377,15 @@ color: #08f8d9;
         align-items: flex-start;
         font-family: 'Roboto', sans-serif;
         width: 100%;
-        padding: .5rem;
     }
 
     .boxTagSkill{
-        font-size: .8rem;
+        font-size: 1rem;
     }
 
     .aboutMySkill {
-        margin: 1rem 0 0rem 0;
-        font-size: .6rem;
+        margin: .5rem 0 0rem 0;
+        font-size: .8rem;
         width: 100%;
     }
 
@@ -382,50 +394,55 @@ color: #08f8d9;
     }
 
     .boxEndTagSkill p.intoSkill{
-        font-size: .6rem;
+        font-size: .8rem;
     }
 
 }
 
 
-
 /* SECTION  CONTACT */
 
 .boxContact{
-        display: flex;
-        flex-direction: column;
-        align-items:center;
-        margin: 1.5rem 10rem;
-        color: #f3f3f3;
-        width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    color: #f3f3f3;
+    min-width: 100%;
+    min-height: 80vh;
+}
+
+.mainContact {
+    text-align: center;
 }
 
 .message {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40%;
 }
 
 .contact{
     background-color: rgb(75, 65, 65);
-    margin: .5rem;
     padding: 0.5em;
-    width: 20%;
-    margin: auto;
+    margin: .5rem;
+    min-width: 30vw;
 }
 
 .textarea{
     background-color: rgb(75, 65, 65);
     margin: .5rem;
     padding: 0.5em;
-    width: 100%;
+    min-width: 30vw;
 }
 
 .textarea2{
     background-color: rgb(75, 65, 65);
-    height: 100px;
-    width: 100%;
+    max-height: 50%;
+    min-width: 30vw;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+
 }
 
 
