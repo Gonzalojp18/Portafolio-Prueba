@@ -8,10 +8,21 @@ body{
     background-color: #1C1919;
 }
 
+main {
+    min-height: 80vh;
+}
+
 
 /* SECTION NAV */
 .boxNavBar {
         min-width: 100%;
+        min-height: 5vh;
+        background-color: #f82756;
+}
+
+.boxNavBar a {
+    color: #f3f3f3;
+    font-weight: 600;
 }
 
 .iconos {
@@ -26,14 +37,15 @@ body{
 display: flex;
 flex-direction: column;
 max-width: 100%;
-min-height: 100vh;
 padding: 1rem;
+min-height: 100%;
+margin: 1.5rem 0 1.5rem 0;
 }
 
 .boxTag{
     width: 40%;
     transform: translateX(60%);
-    transition: 2s ease-out;
+    transition: 2s linear;
     font-family: 'Splash', cursive;
     font-size: 1.5rem;
     color: #f3f3f3;
@@ -49,8 +61,9 @@ padding: 1rem;
     margin: .5rem 0 .5rem 0;
 }
 
-.title-main h2 { 
-    font-size: 4rem;
+.title-main h2 {
+    font-size: 4.5rem;
+    font-weight: 800;
 }
 
 .title-main span { 
@@ -63,7 +76,7 @@ padding: 1rem;
 .boxEndTag {
     width: 40%;
     transform: translateX(60%);
-    transition: 2s ease-out;
+    transition: 2s linear;
     font-family: 'Splash', cursive;
     color: #f3f3f3;
 }
@@ -92,12 +105,15 @@ button.btn {
 button.btn:hover {
     background-color: #08f8d9;
     color: #f3f3f3;
-    transition: 2s ease-in-out;
+    transition: 2s linear;
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
     .boxCenter {
         min-width: 100vw;
+        justify-content: center;
+        padding: 2rem 0 2rem 0;
+        margin: 4rem 0 4rem 0;
         }
 
     .boxTag{
@@ -107,15 +123,17 @@ button.btn:hover {
     }
 
     .title-main {
-        min-width: 50%;
+        min-width: 80%;
+        transform: translateX(20%);
+        transition: 2s ease-out;
     }
 
     .title-main h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
-    .boxEndTag {
-        width: 20%;
+    .boxEndTag{
+        width: 40%;
         transform: translateX(10%);
     }
 
@@ -224,7 +242,7 @@ button.btn:hover {
 .boxTagAbout{
     width: 100%;
     transform: translatey(-10%);
-    transition: 4s ease-out;
+    transition: 4s linear;
     font-family: 'Splash', cursive;
     font-size: 1rem;
     color: #f3f3f3;
@@ -233,14 +251,14 @@ button.btn:hover {
 .aboutMe {
     width: 100%;
     transform: translatey(-10%);
-    transition: 4s ease-out;
+    transition: 4s linear;
     margin: 2.5rem 0 0rem 0;
 }
 
 .boxEndTagAbout{
     width: 100%;
     transform: translatey(-10%);
-    transition: 4s ease-out;
+    transition: 4s linear;
     font-family: 'Splash', cursive;
     font-size: 1rem;
     color: #f3f3f3;
@@ -296,10 +314,10 @@ color: #08f8d9;
 .boxSkill{
     display: flex;
     color: #f3f3f3;
-    justify-content: flex-end;
-    max-width: 100%;
-    min-height: 100vh;
+    max-width: 80%;
+    min-height: 80vh;
     padding: .5rem;
+    margin: auto;
     }
 
 .mainSkill {
@@ -307,19 +325,19 @@ color: #08f8d9;
 }
 
 .boxTagSkill{
-        width: 60%;
+        width: 50%;
         transform: translatex(10%);
-        transition: 4s ease-out;
+        transition: 2s linear;
         font-family: 'Splash', cursive;
         font-size: 1rem;
         color: #f3f3f3;
 }
 
 .aboutMySkill {
-    width: 80%;
+    width: 100%;
     transform: translatey(-10%);
-    transition: 4s ease-out;
-    margin: 1rem 0 0rem 0;
+    transition: 4s linear;
+    margin: 1rem 0 0 0;
     padding: .5rem 0 0 0;
     font-size: 1rem;
 }
@@ -331,7 +349,7 @@ color: #08f8d9;
 .boxEndTagSkill {
     width: 100%;
     transform: translatey(-10%);
-    transition: 4s ease-out;
+    transition: 4s linear;
     font-family: 'Splash', cursive;
     font-size: 1rem;
     color: #f3f3f3;
@@ -357,9 +375,9 @@ color: #08f8d9;
 
 .skill1, .skill2, .skill3, .skill4,
 .skill5 {
-    margin-top: 2rem;
+    margin-top: 1rem;
     color: #08f8d9;
-    transition: all 4s ease-in;
+    transition: 4s linear;
     transform: translatey(100%);
 }
 
@@ -397,6 +415,18 @@ color: #08f8d9;
         font-size: .8rem;
     }
 
+    .skill{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;;
+        }
+
+        .skill1, .skill2, .skill3, .skill4,
+.skill5 {
+    margin: 1rem;
+}
+
 }
 
 
@@ -408,11 +438,42 @@ color: #08f8d9;
     align-items:center;
     color: #f3f3f3;
     min-width: 100%;
-    min-height: 80vh;
+    min-height: 100vh;
 }
 
-.mainContact {
+.boxTagContact {
+        width: 50%;
+        transform: translatex(10%);
+        transition: 2s linear;
+        font-family: 'Splash', cursive;
+        font-size: 1rem;
+        color: #f3f3f3;
+}
+
+.mainContact h3 {
     text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: 'Anton', sans-serif;
+    color: #08f8d9;
+    padding: .2em;
+}
+
+.mainContact p {
+    text-align: center;
+    font-size: 1rem;
+    width: 50%;
+    margin: auto;
+}
+
+.boxTagEndContact{
+    width: 40%;
+    transform: translatey(-10%);
+    transition: 2s linear;
+    font-family: 'Splash', cursive;
+    font-size: 1rem;
+    color: #f3f3f3;
+
 }
 
 .message {
@@ -423,25 +484,98 @@ color: #08f8d9;
 
 .contact{
     background-color: rgb(75, 65, 65);
-    padding: 0.5em;
-    margin: .5rem;
+    padding: 0.2em;
+    margin: .2rem;
     min-width: 30vw;
 }
 
 .textarea{
     background-color: rgb(75, 65, 65);
-    margin: .5rem;
-    padding: 0.5em;
+    margin: .2rem;
+    padding: 0.2em;
     min-width: 30vw;
 }
 
 .textarea2{
     background-color: rgb(75, 65, 65);
-    max-height: 50%;
+    margin: .2rem;
+    padding: 0.2em;
     min-width: 30vw;
+    height: 20vh;
+}
+
+.btnContact {
+    text-align: center;
+    cursor:pointer;
+    width: 100%;
+    padding: .2rem;
+    background-color: #1C1919;
+    border: 1px solid #08f8d9;
+    color: #08f8d9;
+}
+
+.btnContact:hover {
+    background-color: #08f8d9;
+    color: #f3f3f3;
+    transition: 2s linear;
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
+
+.boxContact{
+    margin: 2rem 0 0 0;
+}
+
+
+.boxTagContact {
+        width: 30%;
+        font-size: .8rem;
+}
+
+.mainContact h3 {
+    font-size: 2rem;
+    padding: .1em;
+}
+
+.mainContact p {
+    font-size: .8rem;
+    width: 60%;
+}
+
+.boxTagEndContact{
+    width: 20%;
+    font-size: .8rem;
+    margin: .5rem 0 .5rem 0;
+}
+
+.contact{
+    min-width: 80vw;
+}
+
+.textarea{
+    min-width: 80vw;
+}
+
+.textarea2{
+    min-width: 80vw;
+    height: 20vh;
+}
+
+.btnContact {
+    text-align: center;
+    cursor:pointer;
+    width: 100%;
+    padding: .2rem;
+    background-color: #1C1919;
+    border: 1px solid #08f8d9;
+    color: #08f8d9;
+}
+
+.btnContact:hover {
+    background-color: #08f8d9;
+    color: #f3f3f3;
+    transition: 2s linear;
+}
 
 }
 

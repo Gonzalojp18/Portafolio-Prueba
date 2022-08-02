@@ -15,7 +15,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-danger boxNavBar">
+        <nav class="navbar navbar-expand-lg boxNavBar">
             <div class="container-fluid">
                 <button class="navbar-brand navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -55,7 +55,7 @@
             </div>
             <div class="title-main">
                 <h2>Hi,</h2>
-                <h2>I'm <span>G</span>onzalo</h2>
+                <h2>I'm <span>G</span>onzalo,</h2>
                 <h2>Web developer</h2>
             </div>
             <div class="boxEndTag">
@@ -106,11 +106,10 @@
                     <p>
                         < /p />
                     </p>
-                </div>
-                <div class="continue">
-                    <a class="back" href="./index.html"><span style="font-size: 20px; color: white;"></span><i
-                            class="fa-duotone fa-angles-down">Down</i>
-                    </a>
+                    <div class="continue">
+                        <a class="back" href="#skill"><span style="font-size: 20px; color: white;"></span><i class="fa-duotone fa-chevrons-down">NEXT</i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -159,6 +158,10 @@
                     <p>
                         < /p>
                     </p>
+                    <div class="continue">
+                        <a class="back" href="#boxContact"><span style="font-size: 20px; color: white;"></span><i class="fa-duotone fa-chevrons-down">NEXT</i>
+                        </a>
+                    </div>
                 </div>
                 <div>
                     <a class="back" href="./aboutme.html"><span style="font-size: 20px; color: white;"></span></a>
@@ -173,7 +176,7 @@
             </article>
         </section>
         <section id="boxContact" class="boxContact">
-            <div class="boxTagSkill">
+            <div class="boxTagContact">
                 <p>
                     < /div>
                 </p>
@@ -193,33 +196,38 @@
                     Do not hesitate to contact me.
                 </p>
             </div>
-            <div>
+            <div class="boxTagEndContact">
                 <p>Form/></p>
                 <p>
                     < Div />
                 </p>
-                <form action="/action_page.php">
-                    <div class="message">
-                        <input class="contact" type="text" id="fname" placeholder="Name" name="fname">
-                        <input class="contact" type="text" id="lname" placeholder="Email" name="lname">
-                        <input class="textarea" type="text" id="lname" placeholder="Subjet" name="lname">
-                        <input class="textarea2" type="textarea" id="lname" placeholder="Message" name="lname">
-                    </div>
-                </form>
+            </div>
+            <form action="/action_page.php">
+                <div class="message">
+                    <input class="contact" type="text" id="fname" placeholder="Name" name="fname">
+                    <input class="contact" type="text" id="lname" placeholder="Email" name="lname">
+                    <input class="textarea" type="text" id="lname" placeholder="Subjet" name="lname">
+                    <input class="textarea2" type="textarea" id="lname" placeholder="Message" name="lname">
+                </div>
+            </form>
+            <div class="boxTagEndContact">
                 <p>
                     < Div />
                 </p>
                 <p>Form/></p>
             </div>
-            <div class="boxBottom">
-                <button class="btn">Contact Me</button>
-            </div>
-            <div>
-                <a class="back" href="./index.html"><span style="font-size: 20px; color: white;"></span><i
-                        class="fa-solid fa-house">HOME</i></a>
+            <div class="boxBottomContact">
+                <button class="btnContact">Contact Me</button>
             </div>
         </section>
     </main>
+
+    <footer>
+        <div>
+            <a class="back" href="./index.html"><span style="font-size: 20px; color: white;"></span><i
+                    class="fa-solid fa-house">HOME</i></a>
+        </div>
+    </footer>
 
 </body>
 <script src="https://kit.fontawesome.com/90d8caa692.js" crossorigin="anonymous"></script>
