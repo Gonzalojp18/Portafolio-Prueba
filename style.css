@@ -17,7 +17,7 @@ main {
 .boxNavBar {
         min-width: 100%;
         min-height: 5vh;
-        background-color: #f82756;
+        /* background-color: #f82756; */
 }
 
 .boxNavBar a {
@@ -47,8 +47,8 @@ margin: 1.5rem 0 1.5rem 0;
     transform: translateX(60%);
     transition: 2s linear;
     font-family: 'Splash', cursive;
-    font-size: 1.5rem;
-    color: #f3f3f3;
+    font-size: 1rem;
+    color: rgba(243, 243, 243 , 0.1);
 }
 
 .title-main {
@@ -78,13 +78,14 @@ margin: 1.5rem 0 1.5rem 0;
     transform: translateX(60%);
     transition: 2s linear;
     font-family: 'Splash', cursive;
-    color: #f3f3f3;
+    color: rgba(243, 243, 243 , 0.1);
 }
 
 
 p.stack{
     font-family: 'Darker Grotesque', sans-serif;
     font-size: 2rem;
+    color: #f3f3f3;
 }
 
 .boxBottom button {
@@ -112,29 +113,31 @@ button.btn:hover {
     .boxCenter {
         min-width: 100vw;
         justify-content: center;
-        padding: 2rem 0 2rem 0;
-        margin: 4rem 0 4rem 0;
+        padding: 0 0 2rem 0;
+        margin: 1rem 0 4rem 0;
         }
 
     .boxTag{
         width: 20%;
         font-size: .8rem;
         transform: translateX(10%);
+        
     }
 
     .title-main {
         min-width: 80%;
-        transform: translateX(20%);
+        transform: translateX(10%);
         transition: 2s ease-out;
     }
 
     .title-main h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .boxEndTag{
         width: 40%;
         transform: translateX(10%);
+        color: rgba(243, 243, 243 , 0.1);
     }
 
     p.stack{
@@ -144,7 +147,7 @@ button.btn:hover {
 
     .boxBottom button {
         width: 50%;
-        margin: 1rem 0 0 1rem;
+        margin: 1rem 0 2rem 1rem;
         padding: .1rem;
     }
 
@@ -153,8 +156,8 @@ button.btn:hover {
         flex-direction: column;
         width: 10%;
         position:fixed;
-        right: .5em;
-        top: 5rem;
+        right: .2em;
+        top: 1rem;
     }
 
 
@@ -245,7 +248,7 @@ button.btn:hover {
     transition: 4s linear;
     font-family: 'Splash', cursive;
     font-size: 1rem;
-    color: #f3f3f3;
+    color: rgba(243, 243, 243 , 0.1);
 }
 
 .aboutMe {
@@ -261,7 +264,7 @@ button.btn:hover {
     transition: 4s linear;
     font-family: 'Splash', cursive;
     font-size: 1rem;
-    color: #f3f3f3;
+    color: rgba(243, 243, 243 , 0.1);
 }
 
 .intro{
@@ -330,7 +333,7 @@ color: #08f8d9;
         transition: 2s linear;
         font-family: 'Splash', cursive;
         font-size: 1rem;
-        color: #f3f3f3;
+        color: rgba(243, 243, 243 , 0.1);
 }
 
 .aboutMySkill {
@@ -352,7 +355,7 @@ color: #08f8d9;
     transition: 4s linear;
     font-family: 'Splash', cursive;
     font-size: 1rem;
-    color: #f3f3f3;
+    color: rgba(243, 243, 243 , 0.1);
 }
 
 .boxEndTagSkill a.create{
@@ -447,7 +450,7 @@ color: #08f8d9;
         transition: 2s linear;
         font-family: 'Splash', cursive;
         font-size: 1rem;
-        color: #f3f3f3;
+        color: rgba(243, 243, 243 , 0.1);
 }
 
 .mainContact h3 {
@@ -472,7 +475,7 @@ color: #08f8d9;
     transition: 2s linear;
     font-family: 'Splash', cursive;
     font-size: 1rem;
-    color: #f3f3f3;
+    color: rgba(243, 243, 243 , 0.1);
 
 }
 
@@ -539,7 +542,7 @@ color: #08f8d9;
 
 .mainContact p {
     font-size: .8rem;
-    width: 60%;
+    width: 80%;
 }
 
 .boxTagEndContact{
