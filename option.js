@@ -1,10 +1,10 @@
-let title = document.getElementById("title");
-title.addEventListener("mouseover",color);
+// let title = document.getElementById("title");
+// title.addEventListener("mouseover",color);
 
-function color (){
+// function color (){
 
-    title.style.color = 'red';
-};
+//     title.style.color = 'red';
+// };
 
 
 
