@@ -32,6 +32,7 @@ main {
     top: 1rem;
 }
 
+/* I got to fix my padding an margin in media querys in this section" */
 /* SECTION HOME */
 .boxCenter {
 display: flex;
@@ -120,7 +121,7 @@ a.next {
 @media (min-width: 320px) and (max-width: 768px) {
     .boxCenter {
         min-width: 100vw;
-        justify-content: center;
+        justify-content: flex-start;
         padding: 0 0 2rem 0;
         margin: 1rem 0 4rem 0;
         }
@@ -169,10 +170,9 @@ a.next {
 
     a.next {
         position: absolute;
+        top: 4rem;
         right: 1rem;
         }
-
-
 }
 
 /* SECTION ABOUT ME */
@@ -415,7 +415,7 @@ p.intoSkill{
     .aboutMySkill {
         margin: .5rem 0 0rem 0;
         font-size: .8rem;
-        min-width: 100%;
+        min-width: 80%;
     }
 
 .intro{
@@ -452,12 +452,12 @@ p.intoSkill{
     align-items:center;
     color: #f3f3f3;
     min-width: 100%;
-    min-height: 100vh;
+    min-height: 90vh;
     margin-top: 1rem;
 }
 
 .boxTagContact {
-        width: 50%;
+        min-width: 50%;
         transform: translatex(10%);
         transition: 2s linear;
         font-family: 'Splash', cursive;
@@ -538,8 +538,8 @@ p.intoSkill{
 @media (min-width: 320px) and (max-width: 768px) {
 
 .boxTagContact {
-        width: 30%;
-        font-size: .8rem;
+    min-width: 30%;
+    font-size: .8rem;
 }
 
 .mainContact h3 {
@@ -588,7 +588,6 @@ p.intoSkill{
 }
 
 }
-
 
 footer {
     background-color: #f73d65;
