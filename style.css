@@ -121,9 +121,8 @@ a.next {
 @media (min-width: 320px) and (max-width: 768px) {
     .boxCenter {
         min-width: 100vw;
-        justify-content: flex-start;
         padding: 0 0 2rem 0;
-        margin: 1rem 0 4rem 0;
+        margin: 4rem 0 4rem 0;
         }
 
     .boxTag{
@@ -170,7 +169,7 @@ a.next {
 
     a.next {
         position: absolute;
-        top: 4rem;
+        bottom: 2rem;
         right: 1rem;
         }
 }
@@ -457,12 +456,14 @@ p.intoSkill{
 }
 
 .boxTagContact {
-        min-width: 50%;
-        transform: translatex(10%);
-        transition: 2s linear;
-        font-family: 'Splash', cursive;
-        font-size: 1rem;
-        color: rgba(243, 243, 243 , 0.1);
+    min-width: 50%;
+    font-family: 'Splash', cursive;
+    font-size: 1rem;
+    color: rgba(203, 216, 216, 0.1);
+}
+
+.mainContact{
+    margin-top: 2rem;
 }
 
 .mainContact h3 {
@@ -482,9 +483,7 @@ p.intoSkill{
 }
 
 .boxTagEndContact{
-    width: 40%;
-    transform: translatey(-10%);
-    transition: 2s linear;
+    min-width: 40%;
     font-family: 'Splash', cursive;
     font-size: 1rem;
     color: rgba(243, 243, 243 , 0.1);
@@ -519,6 +518,10 @@ p.intoSkill{
     height: 20vh;
 }
 
+.boxBottomContact{
+    margin-top: 1rem 0 1rem 0;
+}
+
 .btnContact {
     text-align: center;
     cursor:pointer;
@@ -540,6 +543,10 @@ p.intoSkill{
 .boxTagContact {
     min-width: 30%;
     font-size: .8rem;
+}
+
+.mainContact{
+    margin-top: 2rem;
 }
 
 .mainContact h3 {
@@ -569,6 +576,10 @@ p.intoSkill{
 .textarea2{
     min-width: 80vw;
     height: 20vh;
+}
+
+.boxBottomContact{
+    margin-top: 1rem 0 1rem 0;
 }
 
 .btnContact {
