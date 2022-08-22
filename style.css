@@ -300,7 +300,7 @@ color: #08f8d9;
     }
 
 .mainSkill {
-    min-width: 50%;
+    min-width: 40%;
 }
 
 .boxTagSkill{
@@ -333,9 +333,10 @@ p.intoSkill{
 
 .skill{
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
-    min-width: 50%;
+    min-width: 60%;
     padding: 1rem;
 }
 
@@ -347,6 +348,67 @@ p.intoSkill{
     margin: .5rem;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     color: #08f8d9;
+}
+
+.skill1:hover{
+    -moz-transform: scale(1,1) rotatey(360deg);
+    -webkit-transform: scale(1,1) rotatey(360deg);
+    -o-transform: scale(1,1) rotatey(360deg);
+    -ms-transform: scale(1,1) rotatey(360deg);
+    transform: scale(1,1) rotatey(360deg);
+    transition: 3s ease;
+    animation-iteration-count: infinite;
+    box-shadow: rgba(245, 4, 85, 0.518) 0px 54px 55px, rgba(245, 4, 85, 0.518) 0px -12px 30px, rgba(245, 4, 85, 0.518) 0px 4px 6px, rgba(245, 4, 85, 0.518) 0px 12px 13px, rgba(245, 4, 85, 0.518) 0px -3px 5px;;
+}
+
+.skill2:hover{-moz-transform: scale(1,1) rotatey(360deg);
+    -webkit-transform: scale(1,1) rotatey(360deg);
+    -o-transform: scale(1,1) rotatey(360deg);
+    -ms-transform: scale(1,1) rotatey(360deg);
+    transform: scale(1,1) rotatey(360deg);
+    transition: 3s ease;
+    animation-iteration-count: infinite;
+    box-shadow: rgba(245, 4, 85, 0.518) 0px 54px 55px, rgba(245, 4, 85, 0.518) 0px -12px 30px, rgba(245, 4, 85, 0.518) 0px 4px 6px, rgba(245, 4, 85, 0.518) 0px 12px 13px, rgba(245, 4, 85, 0.518) 0px -3px 5px;}
+
+
+.skill3:hover{-moz-transform: scale(1,1) rotatey(360deg);
+    -webkit-transform: scale(1,1) rotatey(360deg);
+    -o-transform: scale(1,1) rotatey(360deg);
+    -ms-transform: scale(1,1) rotatey(360deg);
+    transform: scale(1,1) rotatey(360deg);
+    transition: 3s ease;
+    animation-iteration-count: infinite;
+    box-shadow: rgba(245, 4, 85, 0.518) 0px 54px 55px, rgba(245, 4, 85, 0.518) 0px -12px 30px, rgba(245, 4, 85, 0.518) 0px 4px 6px, rgba(245, 4, 85, 0.518) 0px 12px 13px, rgba(245, 4, 85, 0.518) 0px -3px 5px;}
+
+
+.skill4:hover{-moz-transform: scale(1,1) rotatey(360deg);
+    -webkit-transform: scale(1,1) rotatey(360deg);
+    -o-transform: scale(1,1) rotatey(360deg);
+    -ms-transform: scale(1,1) rotatey(360deg);
+    transform: scale(1,1) rotatey(360deg);
+    transition: 3s ease;
+    animation-iteration-count: infinite;
+    box-shadow: rgba(245, 4, 85, 0.518) 0px 54px 55px, rgba(245, 4, 85, 0.518) 0px -12px 30px, rgba(245, 4, 85, 0.518) 0px 4px 6px, rgba(245, 4, 85, 0.518) 0px 12px 13px, rgba(245, 4, 85, 0.518) 0px -3px 5px;
+    }
+
+.skill5:hover{-moz-transform: scale(1,1) rotatey(360deg);
+    -webkit-transform: scale(1,1) rotatey(360deg);
+    -o-transform: scale(1,1) rotatey(360deg);
+    -ms-transform: scale(1,1) rotatey(360deg);
+    transform: scale(1,1) rotatey(360deg);
+    transition: 3s ease;
+    animation-iteration-count: infinite;
+    box-shadow: rgba(245, 4, 85, 0.518) 0px 54px 55px, rgba(245, 4, 85, 0.518) 0px -12px 30px, rgba(245, 4, 85, 0.518) 0px 4px 6px, rgba(245, 4, 85, 0.518) 0px 12px 13px, rgba(245, 4, 85, 0.518) 0px -3px 5px;}
+
+.skill6:hover{-moz-transform: scale(1,1) rotatey(360deg);
+    -webkit-transform: scale(1,1) rotatey(360deg);
+    -o-transform: scale(1,1) rotatey(360deg);
+    -ms-transform: scale(1,1) rotatey(360deg);
+    transform: scale(1,1) rotatey(360deg);
+    transition: 3s ease;
+    animation-iteration-count: infinite;
+    box-shadow: rgba(245, 4, 85, 0.518) 0px 54px 55px, rgba(245, 4, 85, 0.518) 0px -12px 30px, rgba(245, 4, 85, 0.518) 0px 4px 6px, rgba(245, 4, 85, 0.518) 0px 12px 13px, rgba(245, 4, 85, 0.518) 0px -3px 5px;
+
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
@@ -393,7 +455,7 @@ p.intoSkill{
     min-height: 40vh;
 }
 
-        .skill1, .skill2, .skill3, .skill4,
+.skill1, .skill2, .skill3, .skill4,
 .skill5, .skill6{
     text-align: center;
     width: 30%;
@@ -447,7 +509,6 @@ p.intoSkill{
     font-size: 1rem;
     margin: auto;
     color:  rgb(160, 156, 156);
-
 }
 
 .message {
