@@ -32,6 +32,7 @@ main {
     top: 1rem;
 }
 
+
 /* I got to fix my padding an margin in media querys in this section" */
 /* SECTION HOME */
 .boxCenter {
@@ -54,13 +55,42 @@ margin: 1.5rem 0 1.5rem 0;
 
 .title-main {
     width: 50%;
-    transform: translateX(60%);
-    transition: 4s ease-out;
     color: #f3f3f3;
     font-size: 5rem;
     min-height: 20vh;
-    margin: .5rem 0 .5rem 0;
+    margin: .5rem auto .5rem auto;
 }
+
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
 
 .title-main h2 {
     font-size: 4.5rem;
@@ -84,9 +114,11 @@ margin: 1.5rem 0 1.5rem 0;
 
 
 p.stack{
+    color: #f3f3f3;
     font-family: 'Darker Grotesque', sans-serif;
     font-size: 2rem;
     color: #f3f3f3;
+    margin-left: 20rem;
 }
 
 .boxBottom button {
@@ -117,6 +149,8 @@ a.next {
     color: #08f8d9;
     font-family: 'Splash', cursive;
     }
+
+
 
 @media (min-width: 320px) and (max-width: 768px) {
     .boxCenter {
@@ -150,7 +184,8 @@ a.next {
 
     p.stack{
         font-family: 'Darker Grotesque', sans-serif;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        margin-left: 2rem;
     }
 
     .boxBottom button {
@@ -222,6 +257,43 @@ a.next {
     margin: 1rem 0 0rem 0;
     min-height: 40%;
 }
+
+
+.scale-up-hor-right {
+	-webkit-animation: scale-up-hor-right 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: scale-up-hor-right 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-hor-right {
+    0% {
+    -webkit-transform: scaleX(0.4);
+            transform: scaleX(0.4);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+    }
+    100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+    }
+}
+@keyframes scale-up-hor-right {
+    0% {
+    -webkit-transform: scaleX(0.4);
+            transform: scaleX(0.4);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+    }
+    100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+    }
+}
+
+
 
 .aboutMe p {
     margin-top: .8rem;
@@ -312,6 +384,41 @@ color: #08f8d9;
 
 .aboutMySkill {
     font-size: .8rem;
+}
+
+.scale-up-hor-left {
+	-webkit-animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+@-webkit-keyframes scale-up-hor-left {
+    0% {
+    -webkit-transform: scaleX(0.4);
+            transform: scaleX(0.4);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    }
+    100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    }
+}
+@keyframes scale-up-hor-left {
+    0% {
+    -webkit-transform: scaleX(0.4);
+            transform: scaleX(0.4);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    }
+    100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    }
 }
 
 .boxEndTagSkill {
