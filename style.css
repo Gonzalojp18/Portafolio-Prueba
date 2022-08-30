@@ -333,7 +333,7 @@ color: #08f8d9;
     .boxAbout {
         flex-direction: column-reverse;
         width: 100vw;
-        min-height: 80vh;
+        min-height: 10  0vh;
     }
 
     .mainAbout {
@@ -350,12 +350,18 @@ color: #08f8d9;
     }
 
     .aboutMe {
-        margin: 2rem 0 0rem 0;
+        margin: 1rem 0 0rem 0;
         font-size: .8rem;
     }
 
     .intro{
         font-size: 2rem;
+        min-width: 100%;
+    }
+
+    .special{
+        font-size: 1.2rem;
+        color: #08f8d9;
     }
 
 }
