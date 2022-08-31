@@ -328,7 +328,7 @@ text-decoration: none;
 color: #08f8d9;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 768px) and (orientation:landscape) {
 
     .boxAbout {
         flex-direction: column-reverse;
@@ -524,7 +524,7 @@ p.intoSkill{
 
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 768px) and (orientation:landscape) {
 
     .boxSkill {
         flex-direction: column;
@@ -672,7 +672,7 @@ p.intoSkill{
     transition: 2s linear;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 768px) and (orientation:landscape) {
 
 .boxTagContact {
     min-width: 30%;
