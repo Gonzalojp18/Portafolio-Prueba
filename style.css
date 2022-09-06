@@ -12,12 +12,9 @@ main {
     min-height: 80vh;
 }
 
-
-/* SECTION NAV */
 .boxNavBar {
         min-width: 100%;
         min-height: 5vh;
-        /* background-color: #f82756; */
 }
 
 .boxNavBar a {
@@ -31,7 +28,6 @@ main {
     right: .1em;
     top: 1rem;
 }
-
 
 /* I got to fix my padding an margin in media querys in this section" */
 /* SECTION HOME */
@@ -47,8 +43,6 @@ margin: 1.5rem 0 1.5rem 0;
 
 .boxTag{
     width: 40%;
-    transform: translateX(60%);
-    transition: 2s linear;
     font-family: 'Splash', cursive;
     font-size: 1rem;
     color:  rgb(160, 156, 156);
@@ -107,12 +101,9 @@ margin: 1.5rem 0 1.5rem 0;
 
 .boxEndTag {
     width: 40%;
-    transform: translateX(60%);
-    transition: 2s linear;
     font-family: 'Splash', cursive;
     color:  rgb(160, 156, 156);
 }
-
 
 p.stack{
     color: #f3f3f3;
@@ -151,63 +142,119 @@ a.next {
     font-family: 'Splash', cursive;
     }
 
-
-
 @media (min-width: 320px) and (max-width: 768px) {
-    .boxCenter {
-        min-width: 100vw;
-        padding: 0 0 2rem 0;
-        margin: 10rem 0 4rem 0;
-        }
 
-    .boxTag{
-        width: 20%;
-        font-size: .8rem;
-        transform: translateX(10%);
-        color:  rgb(160, 156, 156);
+.boxNavBar {
+    min-width: 100%;
+    min-height: 5vh;
+}
+
+.boxCenter {
+    width: 100vw;
+    min-height: 95vh;
+    padding: 0 0 2rem 0;
+    margin: 6rem 0 1rem 0;
+}
+
+.boxTag{
+    width: 20%;
+    font-size: .8rem;
+}
+
+.title-main {
+    min-width: 80%;
+}
+
+.title-main h2 {
+    font-size: 2rem;
+}
+
+.boxEndTag{
+    width: 40%;
+    transform: translateX(10%);
+    color:  rgb(160, 156, 156);
+}
+
+p.stack{
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 1.3rem;
+    margin-left: 2rem;
+}
+
+.boxBottom button {
+    width: 50%;
+    margin: 1rem 0 2rem 1rem;
+    padding: .1rem;
+}
+
+.iconos {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    position:fixed;
+    right: .2em;
+    top: 1rem;
+}
+
+a.next {
+    position: absolute;
+    right: 1rem;
+}
+}
+
+@media all and (min-width: 769px) and (max-width: 980px) {
+
+.boxCenter {
+    width: 100vw;
+    min-height: 80%;
+    padding: 0 0 2rem 0;
+    margin: 2rem 0 4rem 0;
+}
+
+.boxTag{
+    width:15%;
+    font-size: .8rem;
+}
+
+.title-main {
+    min-width: 80%;
+}
+
+.title-main h2 {
+    font-size: 2.5rem;
+}
+
+.boxEndTag{
+    width: 100%;
+    transform: translateX(10%);
+    color:  rgb(160, 156, 156);
+}
+
+p.stack{
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 1.3rem;
+    margin-left: 4.5rem;
+}
+
+.boxBottom button {
+    margin: 1rem 0 2rem 1rem;
+    width: 30%;
+    padding: .1rem;
+}
+
+.iconos {
+    display: flex;
+    margin-right: 1em;
+    width: 20%;
+    position:fixed;
+    top: 2rem;
+}
+
+a.next {
+    position: absolute;
+    right: 1rem;
     }
 
-    .title-main {
-        min-width: 80%;
-        transform: translateX(10%);
-        transition: 2s ease-out;
-    }
-
-    .title-main h2 {
-        font-size: 2.5rem;
-    }
-
-    .boxEndTag{
-        width: 40%;
-        transform: translateX(10%);
-        color:  rgb(160, 156, 156);
-    }
-
-    p.stack{
-        font-family: 'Darker Grotesque', sans-serif;
-        font-size: 1.3rem;
-        margin-left: 2rem;
-    }
-
-    .boxBottom button {
-        width: 50%;
-        margin: 1rem 0 2rem 1rem;
-        padding: .1rem;
-    }
-
-    .iconos {
-        display: flex;
-        flex-direction: column;
-        width: 10%;
-        position:fixed;
-        right: .2em;
-        top: 1rem;
-    }
-
-    a.next {
-        position: absolute;
-        right: 1rem;
-        }
 }
 
 /* SECTION ABOUT ME */
@@ -234,7 +281,6 @@ a.next {
     display: none;
 }
 
-
 .box{
     position: relative;
     width: 20%;
@@ -242,7 +288,6 @@ a.next {
     border-radius: 80%;
     transition: 4s ease-in-out;
 }
-
 
 .boxOne{
     top: 15%;
@@ -358,60 +403,160 @@ color: #08f8d9;
 
 @media (min-width: 320px) and (max-width: 768px) {
 
-    .boxAbout {
-        flex-direction: column-reverse;
-        width: 100vw;
-        min-height: 100vh;
-    }
+.boxAbout {
+    flex-direction: column-reverse;
+    min-width: 80vw;
+    min-height: 100vh;
+}
 
-    .mainAbout {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        font-family: 'Roboto', sans-serif;
-        min-width: 100%;
-        padding: .2rem;
-    }
+.mainAbout {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Roboto', sans-serif;
+    min-width: 100%;
+    padding: .2rem;
+}
 
+.boxAnimation{
+    background-image:url(./recursos/backg.png);
+    width:90%;
+}
 
 .box{
-    display: none;
+    transition: 4s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.boxOne{
+    top: 6%;
+    left:20%;
+    transform: translatex(60px) translatey(190px)rotate(360deg);
+}
+
+.boxTwo{
+    top: 50%;
+    right:2%;
+    transform: translatex(-2px) translatey(-110px)rotate(-360deg);
+}
+
+.boxThree{
+    top: 75%;
+    transform: translatex(-10px) translatey(-90px) rotate(-360deg);
+}
+
+.boxFour{
+    top:5%;
+    transform: translatex(-135px) translatey(100px) rotate(360deg);
+}
+
+.boxFive{
+    right:80%;
+    transform: translatex(-70px) translatey(50px)rotate(360deg);
+}
+
+.boxSix{
+    right: 40%;
+    transform: translatex(-50px) translatey(-140px)  rotate(360deg);
+}
+
+.boxTagAbout{
+    font-size: .8rem;
+}
+
+.aboutMe {
+    margin: 1rem 0 0rem 0;
+    font-size: .8rem;
+}
+
+.intro{
+    font-size: 2rem;
+    min-width: 100%;
+}
+
+.special{
+    font-size: 1.2rem;
+    color: #08f8d9;
+}
+}
+
+@media all and (min-width: 769px) and (max-width: 980px) {
+
+.boxAbout {
+    flex-direction: column-reverse;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.mainAbout {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Roboto', sans-serif;
+    min-width: 100%;
+    padding: .2rem;
+}
+
+.box{
+    position: relative;
+    width: 20%;
+    height: 20%;
+    border-radius: 80%;
+    transition: 4s ease-in-out;
+}
+
+.boxOne{
+    top: 15%;
+    left:9%;
+    transform: translatex(-6rem) translatey(26rem)rotate(360deg) translatey(34rem);
+}
+
+.boxTwo{
+    top: 52%;
+    right:10%;
+    transform: translatex(16.5rem) translatey(13.5rem)rotate(-360deg) translatey(35rem);
+}
+
+.boxThree{
+    top: 75%;
+    transform: translatex(11.7rem) translatey(15rem)rotate(-360deg) translatey(35rem);
+}
+
+.boxFour{
+    top:5%;
+    transform: translatex(-14rem) translatey(51.2rem)rotate(-360deg) translatey(5rem);
 }
 
 .boxFive{
     top: 35%;
     left: 12%;
-    transform: translatex(-120px) translatey(-10px)rotate(360deg)  translatex(41rem) translatey(27rem) ;
-    transition: 4s ease-in-out;
+    transform: translatex(3.5rem) translatey(10.5rem)rotate(-360deg) translatey(35rem);
 }
 
 .boxSix{
     top:70%;
     right: 15%;
-    transform: translatex(-5px) translatey(-5px)  rotate(360deg) translatex(20rem) translatey(19.5rem);
-    transition: 4s ease-in-out;
+    transform: translatex(-18rem) translatey(51.2rem)rotate(-360deg) translatey(-11.5rem);
 }
 
+.boxTagAbout{
+    font-size: .8rem;
+}
 
+.aboutMe {
+    margin: 1rem 0 0rem 0;
+    font-size: .8rem;
+}
 
-    .boxTagAbout{
-        font-size: .8rem;
-    }
+.intro{
+    font-size: 2rem;
+    min-width: 100%;
+}
 
-    .aboutMe {
-        margin: 1rem 0 0rem 0;
-        font-size: .8rem;
-    }
-
-    .intro{
-        font-size: 2rem;
-        min-width: 100%;
-    }
-
-    .special{
-        font-size: 1.2rem;
-        color: #08f8d9;
-    }
+.special{
+    font-size: 1.2rem;
+    color: #08f8d9;
+}
 
 }
 
@@ -445,7 +590,6 @@ color: #08f8d9;
 	-webkit-animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
-
 
 @-webkit-keyframes scale-up-hor-left {
     0% {
@@ -576,6 +720,52 @@ p.intoSkill{
 @media (min-width: 320px) and (max-width: 768px){
 
     .boxSkill {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 100vw;
+        min-height: 100vh;
+        margin-top: 2rem;
+    }
+
+    .boxTagSkill{
+        width: 100%;
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .aboutMySkill {
+        font-size: .8rem;
+        width: 90%;
+        max-height: 100%;
+        margin: auto;
+    }
+
+.intro{
+    font-size: 2rem;
+}
+
+.boxEndTagSkill p.intoSkill{
+    font-size: .8rem;
+}
+
+.skill{
+    display: flex;
+    min-width: 100%;
+    min-height: 40vh;
+}
+
+.skill1, .skill2, .skill3, .skill4,
+.skill5, .skill6{
+    text-align: center;
+    width: 30%;
+    margin: .5rem;
+}
+
+}
+
+@media all and (min-width: 769px) and (max-width: 980px) {
+    .boxSkill {
         flex-direction: column;
         min-width: 100%;
         min-height: 100vh;
@@ -592,7 +782,7 @@ p.intoSkill{
     }
 
     .boxTagSkill{
-        width: 100%;
+        width: 80%;
         font-size: 1rem;
         text-align: left;
     }
@@ -600,15 +790,17 @@ p.intoSkill{
     .aboutMySkill {
         margin: .5rem 0 0rem 0;
         font-size: .8rem;
-        min-width: 80%;
+        width: 85%;
     }
-
-.intro{
-    font-size: 2rem;
-}
 
 .boxEndTagSkill p.intoSkill{
     font-size: .8rem;
+}
+
+.boxEndTagSkill{
+    width: 85%;
+    font-size: 1rem;
+    text-align: left;
 }
 
 .skill{
@@ -622,7 +814,8 @@ p.intoSkill{
 .skill5, .skill6{
     text-align: center;
     width: 30%;
-    margin: .5rem;
+    height: 60%;
+    margin: 2rem;
 }
 
 }
@@ -787,6 +980,71 @@ p.intoSkill{
     transition: 2s linear;
 }
 
+}
+
+@media all and (min-width: 769px) and (max-width: 980px) {
+    .boxTagContact {
+        min-width: 80%;
+        font-size: .8rem;
+    }
+
+    .mainContact{
+        margin-top: 1rem;
+    }
+
+    .boxTagContact {
+        min-width: 20%;
+        margin-left: 1rem;
+    }
+
+    .mainContact h3 {
+        font-size: 2rem;
+        padding: .1em;
+    }
+
+    .mainContact p {
+        font-size: .8rem;
+        width: 60%;
+    }
+
+    .boxTagEndContact{
+        width: 60%;
+        font-size: .8rem;
+        margin: .5rem 0 .5rem 0;
+    }
+
+    .contact{
+        min-width: 60vw;
+    }
+
+    .textarea{
+        min-width: 60vw;
+    }
+
+    .textarea2{
+        min-width: 60vw;
+        height: 20vh;
+    }
+
+    .boxBottomContact{
+        margin-top: 1rem 0 1rem 0;
+    }
+
+    .btnContact {
+        text-align: center;
+        cursor:pointer;
+        width: 100%;
+        padding: .2rem;
+        background-color: #1C1919;
+        border: 1px solid #08f8d9;
+        color: #08f8d9;
+    }
+
+    .btnContact:hover {
+        background-color: #08f8d9;
+        color: #f3f3f3;
+        transition: 2s linear;
+    }
 }
 
 footer {
