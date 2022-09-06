@@ -29,9 +29,6 @@ main {
     top: 1rem;
 }
 
-/* I got to fix my padding an margin in media querys in this section" */
-/* SECTION HOME */
-
 .boxCenter {
 display: flex;
 flex-direction: column;
@@ -63,29 +60,28 @@ margin: 1.5rem 0 1.5rem 0;
 
 @-webkit-keyframes tracking-in-expand {
     0% {
-      letter-spacing: -0.5em;
-      opacity: 0;
+    letter-spacing: -0.5em;
+    opacity: 0;
     }
     40% {
-      opacity: 0.6;
+    opacity: 0.6;
     }
     100% {
-      opacity: 1;
+    opacity: 1;
     }
-  }
-  @keyframes tracking-in-expand {
+}
+@keyframes tracking-in-expand {
     0% {
-      letter-spacing: -0.5em;
-      opacity: 0;
+    letter-spacing: -0.5em;
+    opacity: 0;
     }
     40% {
-      opacity: 0.6;
+    opacity: 0.6;
     }
     100% {
-      opacity: 1;
+    opacity: 1;
     }
-  }
-
+}
 
 .title-main h2 {
     font-size: 4.5rem;
@@ -202,7 +198,7 @@ a.next {
 }
 }
 
-@media all and (min-width: 769px) and (max-width: 980px) {
+@media (min-width: 769px) and (max-width: 980px) {
 
 .boxCenter {
     width: 100vw;
@@ -257,7 +253,67 @@ a.next {
 
 }
 
-/* SECTION ABOUT ME */
+@media  (min-width: 981px) and (max-width: 1204px) {
+
+    .boxCenter {
+        width: 100vw;
+        min-height: 80%;
+        padding: 0 0 2rem 0;
+        margin: 3rem 0 6rem 0;
+    }
+
+    .boxTag{
+        font-size: .8rem;
+    }
+
+    .titleCenter{ 
+        width:100%;
+        margin-left: 10rem;
+    }
+
+    .title-main {
+        width: 70%;
+    }
+
+    .title-main h2 {
+        font-size: 3rem;
+    }
+
+    .boxEndTag{
+        transform: translateX(10%);
+        color:  rgb(160, 156, 156);
+    }
+
+    p.stack{
+        font-family: 'Darker Grotesque', sans-serif;
+        font-size: 1.3rem;
+        margin-left: 10rem;
+    }
+
+    p.stack2{
+        margin-left: 8rem;
+    }
+
+    .boxBottom button {
+        margin: 1rem 0 2rem 1rem;
+        width: 20%;
+        margin-left: 12rem;
+        padding: .1rem;
+    }
+
+    .iconos {
+        display: flex;
+        margin-right: 1em;
+        width: 20%;
+        position:fixed;
+        top: 2rem;
+    }
+    a.next {
+        position: absolute;
+        right: 1rem;
+        }
+
+}
 
 .boxAbout {
     display: flex;
@@ -277,9 +333,6 @@ a.next {
     margin: auto;
 }
 
-.imgAnimation{
-    display: none;
-}
 
 .box{
     position: relative;
@@ -452,12 +505,12 @@ color: #08f8d9;
 
 .boxFive{
     right:80%;
-    transform: translatex(-70px) translatey(50px)rotate(360deg);
+    transform: translatex(-60px) translatey(50px)rotate(360deg);
 }
 
 .boxSix{
     right: 40%;
-    transform: translatex(-50px) translatey(-140px)  rotate(360deg);
+    transform: translatex(25px) translatey(-140px)  rotate(360deg);
 }
 
 .boxTagAbout{
@@ -480,7 +533,7 @@ color: #08f8d9;
 }
 }
 
-@media all and (min-width: 769px) and (max-width: 980px) {
+@media (min-width: 768px) and (max-width: 980px) {
 
 .boxAbout {
     flex-direction: column-reverse;
@@ -556,6 +609,66 @@ color: #08f8d9;
 .special{
     font-size: 1.2rem;
     color: #08f8d9;
+}
+
+}
+
+@media (min-width: 981px) and (max-width: 1204px) {
+
+.boxAbout {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.mainAbout {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Roboto', sans-serif;
+    min-width: 50%;
+    padding: .2rem;
+}
+
+.box{
+    position: relative;
+    width: 20%;
+    height: 20%;
+    border-radius: 80%;
+    transition: 4s ease-in-out;
+}
+
+.boxOne{
+    top: 15%;
+    left:9%;
+    transform: translatex(28.5rem) translatey(26.5rem)rotate(360deg) translatey(24rem);
+}
+
+.boxTwo{
+        top: 52%;
+        right:10%;
+        transform: translatex(40rem) translatey(13.5rem)rotate(-360deg) translatey(20rem);
+    }
+
+.boxThree{
+    top: 75%;
+    transform: translatex(36rem) translatey(5.5rem)rotate(-360deg) translatey(35rem);
+}
+
+.boxFour{
+    top:5%;
+    transform: translatex(20.5rem) translatey(36rem)rotate(-360deg) translatey(5rem);
+}
+
+.boxFive{
+    top: 35%;
+    left: 12%;
+    transform: translatex(28rem) translatey(-rem)rotate(-360deg) translatey(35rem);
+}
+
+.boxSix{
+    top:70%;
+    right: 15%;
+    transform: translatex(-18rem) translatey(51.2rem)rotate(-360deg) translatey(-11.5rem);
 }
 
 }
@@ -764,7 +877,7 @@ p.intoSkill{
 
 }
 
-@media all and (min-width: 769px) and (max-width: 980px) {
+@media (min-width: 769px) and (max-width: 980px) {
     .boxSkill {
         flex-direction: column;
         min-width: 100%;
@@ -817,6 +930,10 @@ p.intoSkill{
     height: 60%;
     margin: 2rem;
 }
+
+}
+
+@media (min-width: 981px) and (max-width: 1204px) {
 
 }
 
