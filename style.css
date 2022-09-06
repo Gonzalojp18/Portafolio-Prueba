@@ -35,6 +35,7 @@ main {
 
 /* I got to fix my padding an margin in media querys in this section" */
 /* SECTION HOME */
+
 .boxCenter {
 display: flex;
 flex-direction: column;
@@ -220,20 +221,63 @@ a.next {
     margin: auto;
 }
 
-.boxAnimation {
-    background-color: red;
+.boxAnimation{
+    display: flex;
+    background-color: rgb(43, 39, 39);
+    border-radius: 80%;
+    width:50vh;
+    height: 50vh;
     margin: auto;
-    width: 50%;
 }
 
-.mainAnimation{
-    background-color: green;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    transform: rotateX(153deg) rotateY(175deg) rotateZ(173deg);
-    transition: all 0.2 ease-in;
-    position: relative;
+.imgAnimation{
+    display: none;
 }
+
+
+.box{
+    position: relative;
+    width: 20%;
+    height: 20%;
+    border-radius: 80%;
+    transition: 4s ease-in-out;
+}
+
+
+.boxOne{
+    top: 15%;
+    left:9%;
+    transform: translatex(100px) translatey(215px)rotate(-360deg) translatex(25.5rem) translatey(41.5rem);
+}
+
+.boxTwo{
+    top: 52%;
+    right:10%;
+    transform: translatex(-2px) translatey(-110px)rotate(-360deg) translatex(48rem) translatey(42rem);
+}
+
+.boxThree{
+    top: 75%;
+    transform: translatex(-10px) translatey(-130px) rotate(-360deg) translatex(43rem) translatey(51rem) ;
+}
+
+.boxFour{
+    top:5%;
+    transform: translatex(-135px) translatey(100px) rotate(360deg) translatex(31.5rem) translatey(38.5rem);
+}
+
+.boxFive{
+    top: 35%;
+    left: 12%;
+    transform: translatex(-120px) translatey(-10px)rotate(360deg)  translatex(41rem) translatey(27rem) ;
+}
+
+.boxSix{
+    top:70%;
+    right: 15%;
+    transform: translatex(-5px) translatey(-5px)  rotate(360deg) translatex(20rem) translatey(19.5rem);
+}
+
 
 .mainAbout {
     display: flex;
@@ -278,22 +322,6 @@ a.next {
             transform-origin: 100% 100%;
     }
 }
-@keyframes scale-up-hor-right {
-    0% {
-    -webkit-transform: scaleX(0.4);
-            transform: scaleX(0.4);
-    -webkit-transform-origin: 100% 100%;
-            transform-origin: 100% 100%;
-    }
-    100% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-    -webkit-transform-origin: 100% 100%;
-            transform-origin: 100% 100%;
-    }
-}
-
-
 
 .aboutMe p {
     margin-top: .8rem;
@@ -328,12 +356,12 @@ text-decoration: none;
 color: #08f8d9;
 }
 
-@media (min-width: 320px) and (max-width: 768px) and (orientation:landscape) {
+@media (min-width: 320px) and (max-width: 768px) {
 
     .boxAbout {
         flex-direction: column-reverse;
         width: 100vw;
-        min-height: 10  0vh;
+        min-height: 100vh;
     }
 
     .mainAbout {
@@ -341,9 +369,30 @@ color: #08f8d9;
         flex-direction: column;
         align-items: flex-start;
         font-family: 'Roboto', sans-serif;
-        width: 100%;
+        min-width: 100%;
         padding: .2rem;
     }
+
+
+.box{
+    display: none;
+}
+
+.boxFive{
+    top: 35%;
+    left: 12%;
+    transform: translatex(-120px) translatey(-10px)rotate(360deg)  translatex(41rem) translatey(27rem) ;
+    transition: 4s ease-in-out;
+}
+
+.boxSix{
+    top:70%;
+    right: 15%;
+    transform: translatex(-5px) translatey(-5px)  rotate(360deg) translatex(20rem) translatey(19.5rem);
+    transition: 4s ease-in-out;
+}
+
+
 
     .boxTagAbout{
         font-size: .8rem;
@@ -524,12 +573,13 @@ p.intoSkill{
 
 }
 
-@media (min-width: 320px) and (max-width: 768px) and (orientation:landscape) {
+@media (min-width: 320px) and (max-width: 768px){
 
     .boxSkill {
         flex-direction: column;
         min-width: 100%;
         min-height: 100vh;
+        margin-top: 3rem;
     }
 
     .mainSkill {
@@ -672,7 +722,7 @@ p.intoSkill{
     transition: 2s linear;
 }
 
-@media (min-width: 320px) and (max-width: 768px) and (orientation:landscape) {
+@media (min-width: 320px) and (max-width: 768px) {
 
 .boxTagContact {
     min-width: 30%;
