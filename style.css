@@ -349,35 +349,35 @@ a.next {
 .boxOne{
     top: 15%;
     left:9%;
-    transform: translatex(100px) translatey(215px)rotate(-360deg) translatex(25.5rem) translatey(41.5rem);
+    transform: translateX(100px) translateY(215px)rotate(-360deg) translateX(25.5rem) translateY(41.5rem);
 }
 
 .boxTwo{
     top: 52%;
     right:10%;
-    transform: translatex(-2px) translatey(-110px)rotate(-360deg) translatex(48rem) translatey(42rem);
+    transform: translateX(-2px) translateY(-110px)rotate(-360deg) translateX(48rem) translateY(42rem);
 }
 
 .boxThree{
     top: 75%;
-    transform: translatex(-10px) translatey(-130px) rotate(-360deg) translatex(43rem) translatey(51rem) ;
+    transform: translateX(-10px) translateY(-130px) rotate(-360deg) translateX(43rem) translateY(51rem) ;
 }
 
 .boxFour{
     top:5%;
-    transform: translatex(-135px) translatey(100px) rotate(360deg) translatex(31.5rem) translatey(38.5rem);
+    transform: translateX(-135px) translateY(100px) rotate(360deg) translateX(31.5rem) translateY(38.5rem);
 }
 
 .boxFive{
     top: 35%;
     left: 12%;
-    transform: translatex(-120px) translatey(-10px)rotate(360deg)  translatex(41rem) translatey(27rem) ;
+    transform: translateX(-120px) translateY(-10px)rotate(360deg)  translateX(41rem) translateY(27rem) ;
 }
 
 .boxSix{
     top:70%;
     right: 15%;
-    transform: translatex(-5px) translatey(-5px)  rotate(360deg) translatex(20rem) translatey(19.5rem);
+    transform: translateX(-5px) translateY(-5px)  rotate(360deg) translateX(20rem) translateY(19.5rem);
 }
 
 
@@ -410,7 +410,7 @@ a.next {
 	animation: scale-up-hor-right 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
-@-webkit-keyframes scale-up-hor-right {
+@keyframes scale-up-hor-right {
     0% {
     -webkit-transform: scaleX(0.4);
             transform: scaleX(0.4);
@@ -488,33 +488,33 @@ color: #08f8d9;
 .boxOne{
     top: 6%;
     left:20%;
-    transform: translatex(60px) translatey(190px)rotate(360deg);
+    transform: translateX(60px) translateY(190px)rotate(360deg);
 }
 
 .boxTwo{
     top: 50%;
     right:2%;
-    transform: translatex(-2px) translatey(-110px)rotate(-360deg);
+    transform: translateX(-2px) translateY(-110px)rotate(-360deg);
 }
 
 .boxThree{
     top: 75%;
-    transform: translatex(-10px) translatey(-90px) rotate(-360deg);
+    transform: translateX(-10px) translateY(-90px) rotate(-360deg);
 }
 
 .boxFour{
     top:5%;
-    transform: translatex(-135px) translatey(100px) rotate(360deg);
+    transform: translateX(-135px) translateY(100px) rotate(360deg);
 }
 
 .boxFive{
     right:80%;
-    transform: translatex(-60px) translatey(50px)rotate(360deg);
+    transform: translateX(-60px) translateY(50px)rotate(360deg);
 }
 
 .boxSix{
     right: 40%;
-    transform: translatex(25px) translatey(-140px)  rotate(360deg);
+    transform: translateX(25px) translateY(-140px)  rotate(360deg);
 }
 
 .boxTagAbout{
@@ -565,35 +565,35 @@ color: #08f8d9;
 .boxOne{
     top: 15%;
     left:9%;
-    transform: translatex(-6rem) translatey(26rem)rotate(360deg) translatey(34rem);
+    transform: translateX(-6rem) translateY(26rem)rotate(360deg) translateY(34rem);
 }
 
 .boxTwo{
     top: 52%;
     right:10%;
-    transform: translatex(16.5rem) translatey(13.5rem)rotate(-360deg) translatey(35rem);
+    transform: translateX(16.5rem) translateY(13.5rem)rotate(-360deg) translateY(35rem);
 }
 
 .boxThree{
     top: 75%;
-    transform: translatex(11.7rem) translatey(15rem)rotate(-360deg) translatey(35rem);
+    transform: translateX(11.7rem) translateY(15rem)rotate(-360deg) translateY(35rem);
 }
 
 .boxFour{
     top:5%;
-    transform: translatex(-14rem) translatey(51.2rem)rotate(-360deg) translatey(5rem);
+    transform: translateX(-14rem) translateY(51.2rem)rotate(-360deg) translateY(5rem);
 }
 
 .boxFive{
     top: 35%;
     left: 12%;
-    transform: translatex(3.5rem) translatey(10.5rem)rotate(-360deg) translatey(35rem);
+    transform: translateX(3.5rem) translateY(10.5rem)rotate(-360deg) translateY(35rem);
 }
 
 .boxSix{
     top:70%;
     right: 15%;
-    transform: translatex(-18rem) translatey(51.2rem)rotate(-360deg) translatey(-11.5rem);
+    transform: translateX(-18rem) translateY(51.2rem)rotate(-360deg) translateY(-11.5rem);
 }
 
 .boxTagAbout{
@@ -644,35 +644,35 @@ color: #08f8d9;
 .boxOne{
     top: 15%;
     left:9%;
-    transform: translatex(28.5rem) translatey(26.5rem)rotate(360deg) translatey(24rem);
+    transform: translateX(28.5rem) translateY(26.5rem)rotate(360deg) translateY(24rem);
 }
 
 .boxTwo{
         top: 52%;
         right:10%;
-        transform: translatex(40rem) translatey(13.5rem)rotate(-360deg) translatey(20rem);
+        transform: translateX(40rem) translateY(13.5rem)rotate(-360deg) translateY(20rem);
     }
 
 .boxThree{
     top: 75%;
-    transform: translatex(36rem) translatey(5.5rem)rotate(-360deg) translatey(35rem);
+    transform: translateX(36rem) translateY(5.5rem)rotate(-360deg) translateY(35rem);
 }
 
 .boxFour{
     top:5%;
-    transform: translatex(20.5rem) translatey(36rem)rotate(-360deg) translatey(5rem);
+    transform: translateX(20.5rem) translateY(36rem)rotate(-360deg) translateY(5rem);
 }
 
 .boxFive{
     top: 35%;
     left: 12%;
-    transform: translatex(28rem) translatey(-rem)rotate(-360deg) translatey(35rem);
+    transform: translateX(28rem) translateY(-rem)rotate(-360deg) translateY(35rem);
 }
 
 .boxSix{
     top:70%;
     right: 15%;
-    transform: translatex(-18rem) translatey(51.2rem)rotate(-360deg) translatey(-11.5rem);
+    transform: translateX(-18rem) translateY(51.2rem)rotate(-360deg) translateY(-11.5rem);
 }
 
 }
@@ -774,60 +774,60 @@ p.intoSkill{
 }
 
 .skill1:hover{
-    -moz-transform: scale(1,1) rotatey(360deg);
-    -webkit-transform: scale(1,1) rotatey(360deg);
-    -o-transform: scale(1,1) rotatey(360deg);
-    -ms-transform: scale(1,1) rotatey(360deg);
-    transform: scale(1,1) rotatey(360deg);
+    -moz-transform: scale(1,1) rotateY(360deg);
+    -webkit-transform: scale(1,1) rotateY(360deg);
+    -o-transform: scale(1,1) rotateY(360deg);
+    -ms-transform: scale(1,1) rotateY(360deg);
+    transform: scale(1,1) rotateY(360deg);
     transition: 3s ease;
     animation-iteration-count: infinite;
     box-shadow: rgba(245, 4, 85, 0.518) 0px 54px 55px, rgba(245, 4, 85, 0.518) 0px -12px 30px, rgba(245, 4, 85, 0.518) 0px 4px 6px, rgba(245, 4, 85, 0.518) 0px 12px 13px, rgba(245, 4, 85, 0.518) 0px -3px 5px;;
 }
 
-.skill2:hover{-moz-transform: scale(1,1) rotatey(360deg);
-    -webkit-transform: scale(1,1) rotatey(360deg);
-    -o-transform: scale(1,1) rotatey(360deg);
-    -ms-transform: scale(1,1) rotatey(360deg);
-    transform: scale(1,1) rotatey(360deg);
+.skill2:hover{-moz-transform: scale(1,1) rotateY(360deg);
+    -webkit-transform: scale(1,1) rotateY(360deg);
+    -o-transform: scale(1,1) rotateY(360deg);
+    -ms-transform: scale(1,1) rotateY(360deg);
+    transform: scale(1,1) rotateY(360deg);
     transition: 3s ease;
     animation-iteration-count: infinite;
     box-shadow: rgba(245, 4, 85, 0.518) 0px 54px 55px, rgba(245, 4, 85, 0.518) 0px -12px 30px, rgba(245, 4, 85, 0.518) 0px 4px 6px, rgba(245, 4, 85, 0.518) 0px 12px 13px, rgba(245, 4, 85, 0.518) 0px -3px 5px;}
 
 
-.skill3:hover{-moz-transform: scale(1,1) rotatey(360deg);
-    -webkit-transform: scale(1,1) rotatey(360deg);
-    -o-transform: scale(1,1) rotatey(360deg);
-    -ms-transform: scale(1,1) rotatey(360deg);
-    transform: scale(1,1) rotatey(360deg);
+.skill3:hover{-moz-transform: scale(1,1) rotateY(360deg);
+    -webkit-transform: scale(1,1) rotateY(360deg);
+    -o-transform: scale(1,1) rotateY(360deg);
+    -ms-transform: scale(1,1) rotateY(360deg);
+    transform: scale(1,1) rotateY(360deg);
     transition: 3s ease;
     animation-iteration-count: infinite;
     box-shadow: rgba(245, 4, 85, 0.518) 0px 54px 55px, rgba(245, 4, 85, 0.518) 0px -12px 30px, rgba(245, 4, 85, 0.518) 0px 4px 6px, rgba(245, 4, 85, 0.518) 0px 12px 13px, rgba(245, 4, 85, 0.518) 0px -3px 5px;}
 
 
-.skill4:hover{-moz-transform: scale(1,1) rotatey(360deg);
-    -webkit-transform: scale(1,1) rotatey(360deg);
-    -o-transform: scale(1,1) rotatey(360deg);
-    -ms-transform: scale(1,1) rotatey(360deg);
-    transform: scale(1,1) rotatey(360deg);
+.skill4:hover{-moz-transform: scale(1,1) rotateY(360deg);
+    -webkit-transform: scale(1,1) rotateY(360deg);
+    -o-transform: scale(1,1) rotateY(360deg);
+    -ms-transform: scale(1,1) rotateY(360deg);
+    transform: scale(1,1) rotateY(360deg);
     transition: 3s ease;
     animation-iteration-count: infinite;
     box-shadow: rgba(245, 4, 85, 0.518) 0px 54px 55px, rgba(245, 4, 85, 0.518) 0px -12px 30px, rgba(245, 4, 85, 0.518) 0px 4px 6px, rgba(245, 4, 85, 0.518) 0px 12px 13px, rgba(245, 4, 85, 0.518) 0px -3px 5px;
     }
 
-.skill5:hover{-moz-transform: scale(1,1) rotatey(360deg);
-    -webkit-transform: scale(1,1) rotatey(360deg);
-    -o-transform: scale(1,1) rotatey(360deg);
-    -ms-transform: scale(1,1) rotatey(360deg);
-    transform: scale(1,1) rotatey(360deg);
+.skill5:hover{-moz-transform: scale(1,1) rotateY(360deg);
+    -webkit-transform: scale(1,1) rotateY(360deg);
+    -o-transform: scale(1,1) rotateY(360deg);
+    -ms-transform: scale(1,1) rotateY(360deg);
+    transform: scale(1,1) rotateY(360deg);
     transition: 3s ease;
     animation-iteration-count: infinite;
     box-shadow: rgba(245, 4, 85, 0.518) 0px 54px 55px, rgba(245, 4, 85, 0.518) 0px -12px 30px, rgba(245, 4, 85, 0.518) 0px 4px 6px, rgba(245, 4, 85, 0.518) 0px 12px 13px, rgba(245, 4, 85, 0.518) 0px -3px 5px;}
 
-.skill6:hover{-moz-transform: scale(1,1) rotatey(360deg);
-    -webkit-transform: scale(1,1) rotatey(360deg);
-    -o-transform: scale(1,1) rotatey(360deg);
-    -ms-transform: scale(1,1) rotatey(360deg);
-    transform: scale(1,1) rotatey(360deg);
+.skill6:hover{-moz-transform: scale(1,1) rotateY(360deg);
+    -webkit-transform: scale(1,1) rotateY(360deg);
+    -o-transform: scale(1,1) rotateY(360deg);
+    -ms-transform: scale(1,1) rotateY(360deg);
+    transform: scale(1,1) rotateY(360deg);
     transition: 3s ease;
     animation-iteration-count: infinite;
     box-shadow: rgba(245, 4, 85, 0.518) 0px 54px 55px, rgba(245, 4, 85, 0.518) 0px -12px 30px, rgba(245, 4, 85, 0.518) 0px 4px 6px, rgba(245, 4, 85, 0.518) 0px 12px 13px, rgba(245, 4, 85, 0.518) 0px -3px 5px;
