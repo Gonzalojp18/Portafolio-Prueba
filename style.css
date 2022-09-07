@@ -5,7 +5,7 @@ html * {
 }
 
 body{
-    background-color: #1C1919;
+    background-color: #242424;
 }
 
 main {
@@ -30,8 +30,12 @@ main {
 }
 
 .boxCenter {
-display: flex;
+/* display: flex;
 flex-direction: column;
+background-image: url(./recursos/backgroundHome/backg2.png);
+background-repeat: no-repeat;
+background-position:center;
+background-attachment: fixed; */
 max-width: 100%;
 padding: 1rem;
 min-height: 95vh;
